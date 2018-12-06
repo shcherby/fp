@@ -1,5 +1,5 @@
-# fp
-#### Basic FP concepts
+# Functional programming
+#### Basic concepts
 ##### Immutability
 * Impossibility to change the state of the object once it was created
 * Immutable objects are simpler to test, and use
