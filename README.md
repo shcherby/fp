@@ -28,3 +28,6 @@ Application:
 * returns a function as its result
 
 ##### Recursion
+* Recursion is idiomatic way to perform iterations or lopping in functional programming languages
+* Tail recursion usually can be recognized and optimized by a compiler
+* Mutual recursion may require trampoline to handle it
