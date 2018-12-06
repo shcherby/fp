@@ -22,4 +22,9 @@ Application:
 * Allows memoization
 
 ##### First-class &  Higher-order functions
+* First-class functions is a property of programming language to treat functions as a standard datatype
+* Function is considered higher-order function when it does at least one of the following:
+* takes one or more functions as arguments
+* returns a function as its result
+
 ##### Recursion
