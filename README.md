@@ -28,8 +28,7 @@ It used for time tracking purposes, users can track time what they spent on spec
 ```
 
 ## Start Project
-1. Configure PostgreSQL and Flyway    
-[Guideline](https://github.com/khdevnet/postgres-tools/tree/master/flyway)
+1. [Configure PostgreSQL and Flyway](https://github.com/khdevnet/postgres-tools/tree/master/flyway)
 3. Run flyway migrations
 ```
 $ runflyway.bat
