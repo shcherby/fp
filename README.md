@@ -1,6 +1,6 @@
 # Time Tracking Web Application
 
-**Time Tracking** is a standalone (micro)service, which contains web api and process time tracking requests.
+**Time Tracking** is a standalone (micro)service, which contains web api for time tracking requests processing.
 It used for time tracking purposes, users can track time what they spent on specific issue.
 
 ## Tech Stack
