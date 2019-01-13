@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FP.TimeTracking.Web", "FP.TimeTracking.Web\FP.TimeTracking.Web.fsproj", "{EAF1F63F-B24D-49EC-97B1-BE3EAF3098AB}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FP.TimeTracking.Service", "FP.TimeTracking.Service\FP.TimeTracking.Service.fsproj", "{514B9646-E49A-4862-B0FC-BB9C4A12631F}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FP.TimeTracking.Core", "FP.TimeTracking.Core\FP.TimeTracking.Core.fsproj", "{ECB15BD2-0B98-45AB-8283-79FF047001F4}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FP.TimeTracking.Test", "FP.TimeTracking.Test\FP.TimeTracking.Test.fsproj", "{997B0CDF-C2F7-48A6-B792-D9390E4DA7D5}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FP.TimeTracking.Domain", "FP.TimeTracking.Domain\FP.TimeTracking.Domain.fsproj", "{C8E08D63-F71B-4F66-A1A8-B3F2B3CEBAB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAF1F63F-B24D-49EC-97B1-BE3EAF3098AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAF1F63F-B24D-49EC-97B1-BE3EAF3098AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAF1F63F-B24D-49EC-97B1-BE3EAF3098AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAF1F63F-B24D-49EC-97B1-BE3EAF3098AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{514B9646-E49A-4862-B0FC-BB9C4A12631F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{514B9646-E49A-4862-B0FC-BB9C4A12631F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{514B9646-E49A-4862-B0FC-BB9C4A12631F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{514B9646-E49A-4862-B0FC-BB9C4A12631F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECB15BD2-0B98-45AB-8283-79FF047001F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECB15BD2-0B98-45AB-8283-79FF047001F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECB15BD2-0B98-45AB-8283-79FF047001F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECB15BD2-0B98-45AB-8283-79FF047001F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{997B0CDF-C2F7-48A6-B792-D9390E4DA7D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{997B0CDF-C2F7-48A6-B792-D9390E4DA7D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{997B0CDF-C2F7-48A6-B792-D9390E4DA7D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{997B0CDF-C2F7-48A6-B792-D9390E4DA7D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8E08D63-F71B-4F66-A1A8-B3F2B3CEBAB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8E08D63-F71B-4F66-A1A8-B3F2B3CEBAB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8E08D63-F71B-4F66-A1A8-B3F2B3CEBAB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8E08D63-F71B-4F66-A1A8-B3F2B3CEBAB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CBAB498-DBEF-4A7F-B49A-39CF770682F2}
+	EndGlobalSection
+EndGlobal

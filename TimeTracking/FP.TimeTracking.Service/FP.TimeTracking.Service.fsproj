@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Rules\TimeTrackFutureRule.fs" />
+    <Compile Include="Rules\TimeTrackReportedDateRule.fs" />
+    <Compile Include="Rules\TimeTrackSingleTimeRule.fs" />
+    <Compile Include="Rules\TimeTrackSummaryTimeRule.fs" />
+    <Compile Include="TimeTrackValidator.fs" />
+    <Compile Include="TimeTrackService.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FP.TimeTracking.Core\FP.TimeTracking.Core.fsproj" />
+    <ProjectReference Include="..\FP.TimeTracking.Domain\FP.TimeTracking.Domain.fsproj" />
+  </ItemGroup>
+
+</Project>

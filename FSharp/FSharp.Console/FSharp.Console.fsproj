@@ -6,6 +6,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="FuncComposition.fs" />
+    <Compile Include="PipeOperators.fs" />
+    <Compile Include="Recursion.fs" />
+    <Compile Include="LambdaExpression.fs" />
+    <Compile Include="InfixOperator.fs" />
+    <Compile Include="Curring.fs" />
+    <Compile Include="PartialApplication.fs" />
+    <Compile Include="Printer.fs" />
+    <Compile Include="Squared.fs" />
+    <Compile Include="TwoNumbers.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
