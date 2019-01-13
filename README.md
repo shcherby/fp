@@ -28,13 +28,13 @@ It used for time tracking purposes, users can track time what they spent on spec
 ```
 
 ## Start Project
-1. Configure PostgreSQL and Flyway
+1. Configure PostgreSQL and Flyway    
 [Guideline](https://github.com/khdevnet/postgres-tools/tree/master/flyway)
 3. Run flyway migrations
 ```
 $ runflyway.bat
 ```
-4. Run Application
+4. Run Application    
 Use **TimeTracking.sln** solution to run using docker or IIS Express
 
 # REST API
