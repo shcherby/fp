@@ -22,6 +22,7 @@ It used for time tracking purposes, users can track time what they spent on spec
 ├── FP.TimeTracking.Test                     # Contains Unit Test for all layers
 ├── FP.TimeTracking.Web                      # Contains Api contracts and enpoinds implementation
 ├── time-tracking                            # Contains flyway migration SQL scripts
+├── FP_TimeTracking.postman_collection.json  # Postman collection with API request smaples
 ├── flyway-migrate.ps1                       # Powershell flyway migration script
 ├── runflyway.bat                            # Migration runner
 ```
