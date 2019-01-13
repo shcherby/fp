@@ -36,9 +36,9 @@ $ runflyway.bat
 4. Run Application    
 Use **TimeTracking.sln** solution to run using docker or IIS Express
 
-# REST API
-## Create Time Track
-### Request
+## REST API
+### Create Time Track
+#### Request
 
 Type: POST
 
@@ -64,7 +64,7 @@ Body Sample:
   "reportedDate": "2018-11-13T10:57:52Z"
 }
 ```
-### Response
+#### Response
 
 | Status Code | Description  |
 | -------------|:-----|
@@ -91,13 +91,13 @@ Body Sample:
     ]
 }
 ```
-## Get Issue Time tracking
-### Request
+### Get Issue Time tracking
+#### Request
 Type: GET
 
 URL: https://[domain-name]/api/timetracking
 
-### Response
+#### Response
 | Status Code | Description  |
 | -------------|:-----|
 | 200     | Success. |
@@ -121,13 +121,13 @@ Body Sample:
 }
 ```
 
-## Delete Issue Time
-### Request
+### Delete Issue Time
+#### Request
 Type: Delete
 
 URL: https://[domain-name]/api/timetracking/{id}
 
-### Response
+#### Response
 | Status Code | Description  |
 | -------------|:-----|
 | 200     | Success. |
