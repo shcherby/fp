@@ -91,7 +91,7 @@ Body Sample:
     ]
 }
 ```
-## Get Issue Time tracking data
+## Get Issue Time tracking
 ### Request
 Type: GET
 
@@ -121,7 +121,7 @@ Body Sample:
 }
 ```
 
-## Delete Issue Time tracking data
+## Delete Issue Time
 ### Request
 Type: Delete
 
