@@ -1,0 +1,137 @@
+{
+	"variables": [],
+	"info": {
+		"name": "FP_TimeTracking",
+		"_postman_id": "d581ac4d-9631-ca94-1f00-229cc35a1ae5",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateTimeTrack",
+			"description": "",
+			"item": [
+				{
+					"name": "Create Time Track OK",
+					"request": {
+						"url": "https://localhost:44322/api/timetracking",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IssueId\": \"18009ca1-f0d4-419e-8ff6-0d356ba71541\",\r\n    \"createdBy\": \"anton@gmail.com\",\r\n    \"description\": \"issue description\",\r\n    \"timeMinutes\": 180,\r\n    \"reportedDate\": \"2018-11-13T10:57:52Z\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create Time Track > BadRequest > TR_In_Future_Rule",
+					"request": {
+						"url": "https://localhost:44322/api/timetracking",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IssueId\": \"18009ca1-f0d4-419e-8ff6-0d356ba71541\",\r\n    \"createdBy\": \"anton@gmail.com\",\r\n    \"description\": \"issue description\",\r\n    \"timeMinutes\": 180,\r\n    \"reportedDate\": \"2019-11-13T10:57:52Z\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create Time Track > BadRequest > TR_SingleTime_Rule",
+					"request": {
+						"url": "https://localhost:44322/api/timetracking",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IssueId\": \"18009ca1-f0d4-419e-8ff6-0d356ba71541\",\r\n    \"createdBy\": \"anton@gmail.com\",\r\n    \"description\": \"issue description\",\r\n    \"timeMinutes\": 2000,\r\n    \"reportedDate\": \"2019-11-13T10:57:52Z\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create Time Track > BadRequest > TR_ReportedDateRule",
+					"request": {
+						"url": "https://localhost:44322/api/timetracking",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IssueId\": \"18009ca1-f0d4-419e-8ff6-0d356ba71541\",\r\n    \"createdBy\": \"anton@gmail.com\",\r\n    \"description\": \"issue description\",\r\n    \"timeMinutes\": 180,\r\n    \"reportedDate\": \"2017-11-13T10:57:52Z\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get Time Tracking by IssueId > OK",
+			"request": {
+				"url": "https://localhost:44322/api/timetracking/18009ca1-f0d4-419e-8ff6-0d356ba71541",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"ticketId\": \"18009ca1-f0d4-419e-8ff6-0d356ba71541\",\r\n        \"ticketNumber\": 3025060,\r\n        \"description\": \"time report description\",\r\n        \"timeMinutes\": 180,\r\n        \"reportedFor\": \"2017-10-13T10:57:52Z\",\r\n        \"ticketPriority\":\r\n            {\r\n                \"id\": 1,\r\n                \"displayName\": \"Medium\",\r\n                \"name\": \"MEDIUM\"\r\n            },\r\n        \"ticketStatus\":\r\n            {\r\n                \"id\": 2,\r\n                \"smsKey\": \"E0012\",\r\n                \"displayName\": \"Pre-analysis\",\r\n                \"name\": \"PRE_ANALYSIS\"\r\n            },\r\n        \"ticketOpenedAt\": \"2017-08-13T10:57:52Z\",\r\n        \"ticketClosedAt\": \"2017-12-13T10:57:52Z\",\r\n        \"solutionProvidedAt\": \"2017-12-13T10:57:52Z\",\r\n        \"notificationReceiptDate\": \"2017-02-13T10:57:52Z\",\r\n        \"organizationBp\": 1011982\r\n    }\r\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Time Track > OK",
+			"request": {
+				"url": "https://localhost:44322/api/timetracking/7ceb0fb9-291f-415f-b348-14d871e7007d",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
