@@ -1,6 +1,6 @@
 # Time Tracking Web Application
 
-**Time Tracking** is a standalone (micro)service, which contains web api and process time tracking requests.
+**Time Tracking** is a standalone (micro)service, which contains web api for time tracking requests processing.
 It used for time tracking purposes, users can track time what they spent on specific issue.
 
 ## Tech Stack
@@ -22,23 +22,23 @@ It used for time tracking purposes, users can track time what they spent on spec
 ├── FP.TimeTracking.Test                     # Contains Unit Test for all layers
 ├── FP.TimeTracking.Web                      # Contains Api contracts and enpoinds implementation
 ├── time-tracking                            # Contains flyway migration SQL scripts
+├── FP_TimeTracking.postman_collection.json  # Postman collection with API request smaples
 ├── flyway-migrate.ps1                       # Powershell flyway migration script
 ├── runflyway.bat                            # Migration runner
 ```
 
 ## Start Project
-1. Configure PostgreSQL and Flyway
-* [Guideline](https://github.com/khdevnet/postgres-tools/tree/master/flyway)
+1. [Configure PostgreSQL and Flyway](https://github.com/khdevnet/postgres-tools/tree/master/flyway)
 3. Run flyway migrations
 ```
 $ runflyway.bat
 ```
-4. Run Application
-* Use TimeTracking.sln solution to run using docker or IIS Express
+4. Run Application    
+Use **TimeTracking.sln** solution to run using docker or IIS Express
 
-# REST API
-## Create Time Track
-### Request
+## REST API
+### Create Time Track
+#### Request
 
 Type: POST
 
@@ -64,7 +64,7 @@ Body Sample:
   "reportedDate": "2018-11-13T10:57:52Z"
 }
 ```
-### Response
+#### Response
 
 | Status Code | Description  |
 | -------------|:-----|
@@ -91,13 +91,13 @@ Body Sample:
     ]
 }
 ```
-## Get Issue Time tracking
-### Request
+### Get Issue Time tracking
+#### Request
 Type: GET
 
 URL: https://[domain-name]/api/timetracking
 
-### Response
+#### Response
 | Status Code | Description  |
 | -------------|:-----|
 | 200     | Success. |
@@ -121,13 +121,13 @@ Body Sample:
 }
 ```
 
-## Delete Issue Time
-### Request
+### Delete Issue Time
+#### Request
 Type: Delete
 
 URL: https://[domain-name]/api/timetracking/{id}
 
-### Response
+#### Response
 | Status Code | Description  |
 | -------------|:-----|
 | 200     | Success. |
