@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FP.TimeTracking.Core\FP.TimeTracking.Core.fsproj" />
+    <ProjectReference Include="..\FP.TimeTracking.Domain\FP.TimeTracking.Domain.fsproj" />
     <ProjectReference Include="..\FP.TimeTracking.Service\FP.TimeTracking.Service.fsproj" />
     <ProjectReference Include="..\FP.TimeTracking.Web\FP.TimeTracking.Web.fsproj" />
   </ItemGroup>

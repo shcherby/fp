@@ -9,29 +9,21 @@ open FP.TimeTracking.Domain
 
 [<Route("api/[controller]")>]
 [<ApiController>]
-type TimeTrackingController () =
+type TimeTrackingController (timeTrackService: ITimeTrackService) =
     inherit ControllerBase()
-    let mutable addItem = TimeTracksService.Add
-    let mutable deleteItem = TimeTrackRepository.Delete
-
-    [<ApiExplorerSettings(IgnoreApi = true)>]
-    [<NonAction>]
-    member this.AddDependencies (add, delete)=
-        addItem <- add
-        deleteItem <- delete
 
     [<HttpGet("{issueId:guid}")>]
     member this.Get(issueId: Guid) =
-        let timeTracks = TimeTrackRepository.GetByIssueId issueId
+        let timeTracks = timeTrackService.GetByIssueId issueId
         ActionResult<GetResponseModel>(new GetResponseModel(timeTracks, []))
 
     [<HttpPost>]
     member this.Post([<FromBody>] timeTrackClientModel: TimeTrackRequestModel) : ObjectResult =
-        let response = addItem (ToTimeTrack timeTrackClientModel)
+        let response = timeTrackService.Add (ToTimeTrack timeTrackClientModel)
         if response.IsValid 
           then this.Created("Get", MapResourceResponse response) :> ObjectResult
           else this.BadRequest(MapResourceResponse response) :> ObjectResult
 
     [<HttpDelete("{id}")>]
     member this.Delete(id:Guid) : ObjectResult =
-        this.Ok(deleteItem id) :> ObjectResult
+        this.Ok(timeTrackService.Delete id) :> ObjectResult
