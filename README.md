@@ -95,7 +95,7 @@ Body Sample:
 #### Request
 Type: GET
 
-URL: https://[domain-name]/api/timetracking
+URL: https://[domain-name]/api/timetracking/{issueId}
 
 #### Response
 | Status Code | Description  |
